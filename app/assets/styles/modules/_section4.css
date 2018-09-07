@@ -1,0 +1,82 @@
+.my-work__gallery {
+  margin: 0 auto;
+  background: #fff;
+  max-width: 100%;
+  position: relative;
+  padding: 2em 2em;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+
+  @mixin atSmall {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+  }
+
+  &__current img {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &__current {
+    padding: 1em 1em;
+  }
+
+  &__img img {
+    width: 100%;
+    cursor: zoom-in;
+  }
+
+  &__img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+
+    padding: 2em 1em;
+    margin: 0;
+  }
+
+  & a {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 300;
+    position: relative;
+    font-family: "Courgette", cursive;
+    font-weight: 300;
+    transition: 500ms;
+    text-decoration: none;
+  }
+
+  &__button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%);
+    left: 50%;
+    box-shadow: 0px 0px 2px 3px #000;
+    width: 200px;
+    height: 30px;
+    padding: 0.5em 0.5em;
+    background-color: #7b1fa2;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+
+  &__button:hover a {
+    color: #000;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}

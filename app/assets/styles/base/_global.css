@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding: 30px 20px;
+}
+
+.conteiner__intro {
+  max-height: 600px;
+  max-width: 100%;
+  margin: 0;
+  padding: 2em 2em;
+  background: $myRed;
+  color: #fff;
+
+  & h1,
+  h2 {
+    font-family: $lato;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+  }
+}
+
+.conteiner__space {
+  height: 400px;
+  max-width: 100%;
+  opacity: 0.9;
+  background: url(../../../images/awakening.jpg);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.8;
+  margin: 0;
+  padding: 2em 2em;
+  position: relative;
+
+  &__text {
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    max-width: 70%;
+    height: auto;
+    position: relative;
+
+    & h2,
+    h3 {
+      text-align: center;
+      font-family: "Courgette", cursive;
+      color: #fff;
+      text-shadow: 2px 2px black;
+      font-size: 2.5rem;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.slides h3 {
+  font-size: 3rem;
+  text-shadow: dimgrey 4px 0 10px;
+  font-family: "Lato";
+}
+.slides h5 {
+  font-size: 2rem;
+  text-shadow: dimgrey 4px 0 10px;
+}
+.h_extend {
+  transform: translateX(-180px) translateY(70px);
+}
+.animation {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}

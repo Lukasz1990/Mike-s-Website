@@ -1,0 +1,54 @@
+.about__container {
+  position: relative;
+  margin: 0;
+  padding: 2em 2em;
+  margin-top: 50px;
+
+  &__content {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 1em 1em;
+
+    & h1 {
+      font-size: 1.7rem;
+      font-family: "Courgette", cursive;
+      font-weight: 200;
+      text-align: center;
+      text-shadow: dimgrey 1px 0 10px;
+
+      @mixin atSmall {
+        font-size: 3.5rem;
+      }
+    }
+
+    & p {
+      font-size: 1.5rem;
+      font-family: "Courgette", cursive;
+    }
+
+    & h2 {
+      font-size: 1.5rem;
+      text-align: center;
+      font-family: "Courgette", cursive;
+      color: #000000;
+
+      @mixin atSmall {
+        font-size: 3rem;
+      }
+    }
+
+    &__image {
+      width: 250px;
+      height: 250px;
+      left: 50%;
+      position: relative;
+
+      & img {
+        border-radius: 50%;
+        width: 100%;
+        position: relative;
+        box-shadow: dimgrey 15px 0 10px;
+      }
+    }
+  }
+}
